@@ -1,0 +1,17 @@
+{
+  "name": "dev-ed",
+  "version": "1.0.0",
+  "description": "Learning",
+  "main": "app.js",
+  "scripts": {
+    "develop": "nodemon app.js"
+  },
+  "keywords": [
+    "Rahi"
+  ],
+  "author": "Rahi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
