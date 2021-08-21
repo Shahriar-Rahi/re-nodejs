@@ -342,3 +342,48 @@ console.log(addAll(3,3,4,5));
     return [evenSum, oddSum];
   }
   console.log(evenOddSums([50, 60, 60, 45, 71]));
+
+
+//     1
+//    2 2
+//   3 3 3          //space = (highValue - row) // 
+//  4 4 4 4
+// 5 5 5 5 5
+//  4 4 4 4
+//   3 3 3
+//    2 2
+//     1
+
+function diamond() {
+    let rear = [];
+    for (let i = 1; i <= 5; i++) {
+
+        let pat = '';
+        let repat = ''
+        for (let j = 1; j <= 5; j++) {
+            if (j <= (5 - i)) {
+
+                pat += ' ';
+            }
+            else {
+                pat += i + ' ';
+            }
+            if (i != 5 && j <= i) {
+                repat += ' ';
+            }
+            else if (i != 5) {
+                repat += (5 - i) + ' ';
+            }
+        }
+        rear[i] = repat;
+        console.log(pat);
+        if (i == 5) {
+            console.log(rear[1]);
+            console.log(rear[2]);
+            console.log(rear[3]);
+            console.log(rear[4]);
+        }
+    }
+}
+
+diamond();
